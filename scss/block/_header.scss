@@ -52,7 +52,7 @@
     display: none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:600px) {
     .site-header__menu{
         display: inline-block;
     }
@@ -64,5 +64,12 @@
     .site-header__list{
         display: none;
     }
+    .site-header__logo{
+        max-width: 128px;
+    }
 
+}
+
+@media screen and (max-width){
+    
 }

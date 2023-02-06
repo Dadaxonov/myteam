@@ -52,7 +52,7 @@
         }        
 }
 
-    @media screen and (max-width:1350px) {
+    @media screen and (max-width:1048px) {
         .hero__block{
             align-items: center;
             flex-direction: column;
@@ -60,14 +60,14 @@
             text-align: center;
     } 
         .hero__title{
-            min-width: 372px;
+            max-width: 372px;
             font-weight: 700;
             font-size: 64px;
             line-height: 56px;
             margin-bottom: 24px;
         }
             .hero__text{ 
-                min-width: 457px;
+                max-width: 457px;
                 font-weight: 600;
                 font-size: 15px;
                 line-height: 28px;          

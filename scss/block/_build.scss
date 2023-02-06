@@ -1,4 +1,127 @@
 #build{
-    padding: 140px 0;
+    padding-top: 198px;
+    padding-bottom: 140px;
     background-color: #012F34;
+    background-repeat: no-repeat;
+    background-image: url(../../../myteam/img/Group82.svg);
+    background-position: right bottom;
+}
+
+.build__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.build__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    max-width: 445px;
+    position: relative;
+
+    &::before{
+        content: "";
+        width: 50px;
+        height: 4px;
+        background-color: #F67E7E;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -79px;
+    }
+}
+
+.build__block{
+    max-width: 445px;
+}
+
+.build__sub-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F67E7E;
+    margin-bottom: 16px;
+}
+
+.build__text{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.build__item{
+    margin-bottom: 32px;
+    display: flex;
+
+    &::before{
+        content: "";
+        width: 72px;
+        height: 72px;
+        margin-right: 23px;
+        display: inline-block;
+        background-repeat: no-repeat;
+
+        background-position: center;
+    }
+
+    &:nth-child(1)::before{
+        background-image: url(../../../myteam/img/Group11.svg);
+    }
+    &:nth-child(2)::before{
+        background-image: url(../../../myteam/img/Group12.svg);
+    }
+    &:nth-child(3)::before{
+        background-image: url(../../../myteam/img/Group13.svg);
+    }
+}
+
+
+@media screen and (max-width:1311px) {
+    #build{
+        background-position: right top;
+    }  
+    
+    .build__items{
+        flex-direction: column;
+        max-width: 573px;
+        margin: 0 auto;
+    }
+
+    .build__item{
+        &::before{flex-shrink: 0;}
+        
+    }
+    .build__block{
+        max-width: 478px;
+    }
+    .build__title{
+        max-width: 445px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 64px;
+
+        &::before{
+            top: -32px;
+        }
+    }
+}
+
+@media screen and (max-width:493px) {
+    .build__item{
+        flex-direction: column;
+        text-align: center;
+
+        &::before{
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+    }
+
+    .build__title{
+        max-width: 214px;
+    }
 }

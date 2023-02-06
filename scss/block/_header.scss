@@ -42,7 +42,7 @@
 }
 
 .site-header__menu{
-    width: 20px;
+    max-width: 20px;
     height: 20px;
     border: none;
     background-color: transparent;
@@ -55,6 +55,9 @@
 @media screen and (max-width:600px) {
     .site-header__menu{
         display: inline-block;
+        &::before{
+            flex-shrink: 0;
+        }
     }
 
     .site-header__btn{

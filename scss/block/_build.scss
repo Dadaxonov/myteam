@@ -3,7 +3,7 @@
     padding-bottom: 140px;
     background-color: #012F34;
     background-repeat: no-repeat;
-    background-image: url(../../../myteam/img/Group82.svg);
+    background-image: url(../../img/Group82.svg);
     background-position: right bottom;
 }
 
@@ -68,13 +68,13 @@
     }
 
     &:nth-child(1)::before{
-        background-image: url(../../../myteam/img/Group11.svg);
+        background-image: url(../../img/Group11.svg);
     }
     &:nth-child(2)::before{
-        background-image: url(../../../myteam/img/Group12.svg);
+        background-image: url(../../img/Group12.svg);
     }
     &:nth-child(3)::before{
-        background-image: url(../../../myteam/img/Group13.svg);
+        background-image: url(../../img/Group13.svg);
     }
 }
 

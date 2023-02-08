@@ -1,0 +1,129 @@
+#stories{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-repeat: no-repeat;
+    background-image: url(../../img/Group8Copy.svg),url('../../img/Group83.svg');
+    background-position: left top,right bottom;
+}
+
+.stories__title{
+    max-width: 932px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 92px;
+}
+
+
+.stories__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 92px;
+}
+
+.stories__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 350px;
+    position: relative;
+
+
+    &::before{
+        content: "";
+        width:  67px;
+        height: 56px;
+        background-repeat: no-repeat;
+        background-image: url(../../img/qoshtirnoq.svg);
+        position: absolute;
+        display: inline-block;
+        z-index: -1;
+        transform: translateX(-50%);
+        left: 50%;
+        top: -43px;
+    }
+}
+
+.stories__item-text{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 24px;
+    max-width: 350px;
+    position: relative;
+
+  
+}
+
+.stories__block-info{
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+margin-bottom: 32px;
+ 
+}
+
+.stories__sub-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #79C8C7;
+    position: relative;
+   
+}
+
+.stories__img{
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+}
+ @media screen and (max-width:900px) {
+        .stories__list{
+            flex-direction: column;
+        }
+    } 
+
+    @media screen and (max-width:768px) {
+        .stories__title{
+            max-width: 573px;
+            margin-bottom: 84px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .stories__item-text{
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .stories__item{
+            margin-bottom: 84px;
+        }
+        .stories__sub-title{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: #79C8C7;
+        }
+        .stories__block-info{
+            font-size: 13px;
+            line-height: 18px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+    }
